@@ -1,12 +1,14 @@
 import {
-	FETCH_USERS
+	FETCH_ITEMS
 } from './type';
 import axios from 'axios';
+import {data} from '../../data/data';
 
-export function fetchUsers(){
-	const request = axios.get('https://jsonplaceholder.typicode.com/users');
+export function fetchItems(){
+	debugger;
+	const request = data;//axios.get('https://jsonplaceholder.typicode.com/photos');
 	return {
-		type : FETCH_USERS,
+		type : FETCH_ITEMS,
 		payload : request
 	};
 }

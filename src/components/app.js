@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import UserList from './user_list'
+import ItemList from './item_list'
 
 export default class App extends Component {
   render() {
-  	debugger;
     return (
       <div>
-      	<UserList />
+      	<ItemList />
       </div>
     );
   }
